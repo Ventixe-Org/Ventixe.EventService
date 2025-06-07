@@ -14,8 +14,9 @@ builder.Services.AddCors(options =>
     });
 });
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(opts =>
-    opts.UseInMemoryDatabase("VentixeDb"));
+    opts.UseSqlServer(connectionString));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -38,24 +39,12 @@ app.UseAuthorization();
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-
+    db.Database.Migrate();
     if (!db.Events.Any())
     {
         db.Events.AddRange(
-            new Event
-            {
-                Title = "React Meetup",
-                Date = DateTime.Parse("2025-06-01"),
-                Description = "Lär dig mer om React.",
-                Location = "Stockholm"
-            },
-            new Event
-            {
-                Title = "Azure Workshop",
-                Date = DateTime.Parse("2025-06-15"),
-                Description = "Bygg molnapplikationer.",
-                Location = "Göteborg"
-            }
+            new Event { Title = "React Meetup",  Date = DateTime.Parse("2025-06-01"), Description = "Lär dig mer om React.", Location = "Stockholm" },
+            new Event { Title = "Azure Workshop", Date = DateTime.Parse("2025-06-15"), Description = "Bygg molnapplikationer.", Location = "Göteborg" }
         );
         db.SaveChanges();
     }

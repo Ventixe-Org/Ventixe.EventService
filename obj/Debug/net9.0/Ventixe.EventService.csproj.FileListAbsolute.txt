@@ -121,7 +121,6 @@ C:\Users\46707\source\repos\alexxtejedaa\ventixe-eventservice\Ventixe.EventServi
 C:\Users\46707\source\repos\alexxtejedaa\ventixe-eventservice\Ventixe.EventService\obj\Debug\net9.0\Ventixe.EventService.pdb
 C:\Users\46707\source\repos\alexxtejedaa\ventixe-eventservice\Ventixe.EventService\obj\Debug\net9.0\Ventixe.EventService.genruntimeconfig.cache
 C:\Users\46707\source\repos\alexxtejedaa\ventixe-eventservice\Ventixe.EventService\obj\Debug\net9.0\ref\Ventixe.EventService.dll
-C:\Users\46707\source\repos\alexxtejedaa\ventixe-eventservice\Ventixe.EventService\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\46707\source\repos\alexxtejedaa\ventixe-eventservice\Ventixe.EventService\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\46707\source\repos\alexxtejedaa\ventixe-eventservice\Ventixe.EventService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\46707\source\repos\alexxtejedaa\ventixe-eventservice\Ventixe.EventService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

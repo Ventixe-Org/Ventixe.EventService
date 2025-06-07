@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ventixe.EventService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14ecb3154fc06d05f9e5e39319fcb730046dce28")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ebcc1e5e21eaade9434af17672472f332455844")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ventixe.EventService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ventixe.EventService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
